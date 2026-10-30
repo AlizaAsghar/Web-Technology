@@ -7,6 +7,7 @@
   --text: #1A1A1A;
   --font-heading: "Newsreader", serif;
   --font-body: "DM Sans", sans-serif;
+  --accent: hsl(112, 70%, 45%);
 
 }
 
@@ -197,7 +198,7 @@ font-size: x-large;
   text-align: center;
 }
 
-.product {
+/* .product {
   padding: 2rem 0;
 }
 
@@ -214,4 +215,91 @@ font-size: x-large;
 
 .product-price {
   font-size: 1.5rem;
+} */
+
+
+
+/* Hide the cards that don't match the selected filter */
+.featured:has(#f-cards:checked) .col:not([data-category="cards"]),
+.featured:has(#f-planners:checked) .col:not([data-category="planners"]),
+.featured:has(#f-holders:checked) .col:not([data-category="holders"]),
+.featured:has(#f-pens:checked) .col:not([data-category="pens"]) {
+  display: none;
+}
+
+/* The pill look */
+.filter-label {
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+/* The selected pill uses the accent colour */
+.filter input:checked + .filter-label {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* Keyboard focus ring */
+.filter input:focus-visible + .filter-label {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.product-layout {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "image"
+    "details"
+    "description";
+}
+
+.product-main {
+  grid-area: image;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.product-details {
+  grid-area: details;
+}
+
+.product-description {
+  grid-area: description;
+}
+
+.product-qty {
+  margin-bottom: 1rem;
+}
+
+.product-qty label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.product-qty input {
+  max-width: 6rem;
+}
+
+@media (min-width: 616px) {
+  .product-layout {
+    grid-template-columns: 7fr 5fr;
+    grid-template-areas:
+      "image details"
+      "description description";
+  }
+
+  .product-main {
+    aspect-ratio: 4 / 5;
+  }
+
+  .product-details {
+    position: sticky;
+    top: 86px;
+    align-self: start;
+  }
 }
