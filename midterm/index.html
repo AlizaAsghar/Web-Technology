@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Newsreader:wght@400;500&family=Playfair+Display:wght@700&family=Special+Elite&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <title>Re-organize</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header id="site-header">
+  <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">Re-organize</a>
+
+      <a href="#" class="cart ms-auto me-3 ms-lg-3 me-lg-0 order-2 order-lg-3" aria-label="Shopping bag">
+        <i class="bi bi-bag"></i>
+      </a>
+
+      <!-- logo menu cart 
+      logo burger cart -->
+
+      <button class="navbar-toggler order-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+         <i class="bi bi-list"></i>
+      </button>
+
+      <div class="collapse navbar-collapse order-4 order-lg-2" id="mainMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Shop all</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Journals</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+
+<section id="hero" class="hero">
+  <div class="container">
+    <h1>
+      Clear your desk. Own your day.
+    </h1>
+    <p>
+      Simple tools to keep your work in order.
+    </p>
+    <a href="#" class="btn btn-onHeroImg">Explore the collection!</a>
+  </div>
+</section>
+
+<section id="press" class="press d-none d-md-block" aria-label="As seen on">
+  <div class="container">
+    <p class="press-label">As seen on:</p>
+    <ul class="press-list">
+      <li class="press-1">The Daily Ledger</li>
+      <li class="press-2">Paper Review</li>
+      <li class="press-3">The Morning Post</li>
+      <li class="press-4">Workday</li>
+      <li class="press-5">Studio Weekly</li>  
+    </ul>
+  </div>
+</section>
+
+<section id="categories" class="categories">
+  <div class="container">
+    <h2 class="visually-hidden">Shop by category</h2>
+
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+
+      <div class="col">
+        <a href="#products" class="category-tile">
+           <img src="images/starterKit.jpg" alt="Starter kits">
+          <span>Starter kits</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#products" class="category-tile">
+           <img src="images/cards.jpg" alt="Cards">
+          <span>Cards</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#products" class="category-tile">
+           <img src="images/accessories.jpg" alt="Accessories">
+          <span>Accessories</span>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#products" class="category-tile">
+           <img src="images/journals.jpg" alt="Journals">
+          <span>Journals</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="featured" class="featured">
+  <div class="container">
+    <h2>Think better on paper</h2>
+    <p class="featured-intro">Your best work happens away from a screen. Write it, hold it, rearrange it.</p>
+
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=dot-grid">
+            <img src="images/dot&grid.jpg" class="card-img-top" alt="Dot grid cards">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=dot-grid">Dot Grid Cards</a></h3>
+            <p class="card-text">Rs. 2,900</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=lined">
+            <img src="images/lined.jpg" class="card-img-top" alt="Lined cards">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=lined">Lined Cards</a></h3>
+            <p class="card-text">Rs. 2,900</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=graph">
+            <img src="images/graph.jpg" class="card-img-top" alt="Graph cards">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=graph">Graph Cards</a></h3>
+            <p class="card-text">Rs. 2,900</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=blank">
+            <img src="images/blank.jpg" class="card-img-top" alt="Blank cards">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=blank">Blank Cards</a></h3>
+            <p class="card-text">Rs. 2,900</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=task">
+            <img src="images/task.jpg" class="card-img-top" alt="Task cards">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=task">Task Cards</a></h3>
+            <p class="card-text">Rs. 3,200</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=card-holder">
+            <img src="images/card-holder.jpg" class="card-img-top" alt="Walnut card holder">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=card-holder">Walnut Card Holder</a></h3>
+            <p class="card-text">Rs. 6,500</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=pen">
+            <img src="images/pen.jpg" class="card-img-top" alt="Brass pen">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=pen">Brass Pen</a></h3>
+            <p class="card-text">Rs. 2,400</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <a href="product.html?id=journal">
+            <img src="images/journal.jpg" class="card-img-top" alt="Leather journal">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title h5"><a href="product.html?id=journal">Leather Journal</a></h3>
+            <p class="card-text">Rs. 8,900</p>
+            <button type="button" class="btn w-100 addToCart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="trust" class="trust" aria-label="Why shop with us">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <i class="bi bi-person" aria-hidden="true"></i>
+        <h2 class="h5">Independent studio</h2>
+        <p>No investors, just a small team making tools we use ourselves.</p>
+      </div>
+
+      <div class="col">
+        <i class="bi bi-heart" aria-hidden="true"></i>
+        <h2 class="h5">Loved by customers</h2>
+        <p>Thousands of people have made the switch to paper.</p>
+      </div>
+
+      <div class="col">
+        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+        <h2 class="h5">Designed in Pakistan</h2>
+        <p>We take our time to get it right, not just get it out.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer" class="site-footer">
+  <div class="container">
+
+    <div class="newsletter">
+      <h2>The Re-organize newsletter</h2>
+      <p>Early access to new products and monthly tips for a tidier desk.</p>
+
+      <form class="newsletter-form input-group" action="#">
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletter-email" class="form-control" placeholder="Enter your email">
+        <button type="submit" class="btn btn-dark">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="footer-grid">
+
+      <div>
+        <h2>Shop</h2>
+        <ul class="list-unstyled">
+          <li><a href="#featured">Best sellers</a></li>
+          <li><a href="#featured">Cards</a></li>
+          <li><a href="#featured">Journals</a></li>
+          <li><a href="#featured">Accessories</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Help</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>About</h2>
+        <ul class="list-unstyled">
+          <li><a href="#">Our story</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Custom orders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Connect with us</h2>
+        <div class="d-flex gap-3 fs-4 mb-3">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+        <p>hello@reorganize.com</p>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; 2026 Re-organize. All rights reserved.</p>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

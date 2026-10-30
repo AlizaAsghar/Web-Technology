@@ -1,0 +1,217 @@
+:root {
+  --cream: #F5F2EA;
+  --lightGrey: #ebe8e2;
+  --olive: #6B6B58;
+  --yellow: #FDBB1D;
+  --brown: #A0502D;
+  --text: #1A1A1A;
+  --font-heading: "Newsreader", serif;
+  --font-body: "DM Sans", sans-serif;
+
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-item{
+font-size: x-large;
+}
+
+.navbar-toggler{
+  color: var(--cream);
+}
+
+.cart {
+  color: var(--text);
+  font-size: 20px;
+}
+
+.hero {
+  background-color: var(--olive);
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: clamp(10rem, 25vw, 18rem) 0 2rem;
+}
+
+/* .hero h1, .hero p {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+} */
+
+.hero h1 {
+   font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+}
+
+.btn-onHeroImg {
+  background-color: var(--yellow);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.press {
+  background-color: var(--olive);
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.press .container {
+ display: flex;
+ flex-wrap: wrap;
+ gap:2rem;
+}
+
+.press-list {
+  list-style:none;
+  padding:0;
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.press-1 { font-family: "Playfair Display", serif; font-weight: 700; }
+.press-2 { font-family: "Bebas Neue", sans-serif; font-size: 1.4rem; }
+.press-3 { font-family: "UnifrakturCook", serif; font-size: 1.3rem; }
+.press-4 { font-family: "Archivo Black", sans-serif; }
+.press-5 { font-family: "Special Elite", monospace; }
+
+.categories {
+  padding-block: 3rem;
+  background-color:  var(--lightGrey)
+}
+
+.category-tile {
+  display: grid;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.category-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-tile span {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
+.card-img-top {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card > a {
+  display: block;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.card-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn.w-100.addToCart{
+  background-color: var(--yellow)
+}
+
+.trust {
+  background-color: var(--lightGrey);
+  padding: clamp(2rem, 5vw, 3.5rem) 0;
+  text-align: center;
+}
+
+.trust i {
+  font-size: 1.75rem;
+}
+
+.trust h2 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.trust p {
+  margin: 0;
+}
+
+.site-footer {
+  background-color: var(--mint);
+  padding: 2rem 0 1rem;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  max-width: 28rem;
+  margin: 1rem auto 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-grid h2 {
+  font-size: 1.25rem;
+}
+
+.footer-grid a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+.product {
+  padding: 2rem 0;
+}
+
+.product {
+  padding: 2rem 0;
+}
+
+.product-main {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.product-price {
+  font-size: 1.5rem;
+}
