@@ -121,12 +121,34 @@
     <h2>Think better on paper</h2>
     <p class="featured-intro">Your best work happens away from a screen. Write it, hold it, rearrange it.</p>
 
-    <div class="row row-cols-2 row-cols-md-4 g-3">
+<!-- TASK1 -->
 
-      <div class="col">
+    <div class="filter d-flex flex-wrap justify-content-center gap-2 mb-4">
+
+  <input type="radio" name="category" id="f-all" checked>
+  <label for="f-all" class="filter-label">All</label>
+
+  <input type="radio" name="category" id="f-cards">
+  <label for="f-cards" class="filter-label">Cards</label>
+
+  <input type="radio" name="category" id="f-planners" >
+  <label for="f-planners" class="filter-label">Planners</label>
+
+  <input type="radio" name="category" id="f-holders" >
+  <label for="f-holders" class="filter-label">Holders</label>
+
+  <input type="radio" name="category" id="f-pens">
+  <label for="f-pens" class="filter-label">Pens</label>
+
+</div>
+
+
+ <div class="row row-cols-2 row-cols-md-4 g-3">
+
+      <div class="col" data-category="cards">
         <div class="card h-100">
           <a href="product.html?id=dot-grid">
-            <img src="images/dot&grid.jpg" class="card-img-top" alt="Dot grid cards">
+            <img src="images/dot-grid.jpg" class="card-img-top" alt="Dot grid cards">
           </a>
           <div class="card-body">
             <h3 class="card-title h5"><a href="product.html?id=dot-grid">Dot Grid Cards</a></h3>
@@ -136,7 +158,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="cards">
         <div class="card h-100">
           <a href="product.html?id=lined">
             <img src="images/lined.jpg" class="card-img-top" alt="Lined cards">
@@ -149,7 +171,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="cards">
         <div class="card h-100">
           <a href="product.html?id=graph">
             <img src="images/graph.jpg" class="card-img-top" alt="Graph cards">
@@ -162,7 +184,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="cards">
         <div class="card h-100">
           <a href="product.html?id=blank">
             <img src="images/blank.jpg" class="card-img-top" alt="Blank cards">
@@ -175,7 +197,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="planners">
         <div class="card h-100">
           <a href="product.html?id=task">
             <img src="images/task.jpg" class="card-img-top" alt="Task cards">
@@ -188,7 +210,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="holders">
         <div class="card h-100">
           <a href="product.html?id=card-holder">
             <img src="images/card-holder.jpg" class="card-img-top" alt="Walnut card holder">
@@ -201,7 +223,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="pens">
         <div class="card h-100">
           <a href="product.html?id=pen">
             <img src="images/pen.jpg" class="card-img-top" alt="Brass pen">
@@ -214,7 +236,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col" data-category="planners">
         <div class="card h-100">
           <a href="product.html?id=journal">
             <img src="images/journal.jpg" class="card-img-top" alt="Leather journal">
@@ -229,6 +251,7 @@
 
     </div>
   </div>
+  
 </section>
 
 <section id="trust" class="trust" aria-label="Why shop with us">
